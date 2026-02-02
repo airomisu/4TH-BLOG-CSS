@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artful Allure - Home</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+.container {
+position: relative;
+}
+
+.container::before {
+content: '';
+position: absolute;
+inset: -5px;
+border: 1px solid rgba(129, 212, 250, 0.1);
+z-index: -1;
+}
+
+.welcome-section {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.welcome-section h2::after {
+content: '';
+display: block;
+width: 60px;
+height: 2px;
+background: #4fc3f7;
+margin: 15px auto 0;
+box-shadow: 0 0 10px #4fc3f7;
+}
+
+/* Video */
+.video-container {
+aspect-ratio: 16 / 9;
+width: 100%;
+margin: 40px 0;
+padding: 10px;
+background: rgba(255,255,255,0.02);
+border: 1px solid rgba(129, 212, 250, 0.2);
+box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.video-container iframe {
+width: 100%;
+height: 100%;
+border: 0;
+filter: sepia(20%) hue-rotate(180deg) contrast(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Artful Allure</h1>
+<p>Drifting through moments of creativity</p>
+</header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="posts.html">Posts</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About Me</a>
+</nav>
+
+<div class="container">
+
+<div class="welcome-section">
+<h2>Welcome to My Space</h2>
+
+<p>
+Welcome to my space. This is where I share my art and experiments.
+For me, creating is the best way to clear my head and express what I’m thinking.
+From pencil sketches to watercolor pieces, everything here is part of my journey.
+Take a look around and enjoy the vibes!
+</p>
+
+<p>
+Most of these pieces are just me trying to figure things out, one pencil at a time.
+I hope you find something here that resonates with you or inspires you to create something of your own.
+Stay tuned for more updates soon!
+</p>
+</div>
+
+<div class="video-container">
+<iframe
+src="https://www.youtube.com/embed/tCgSRtDRR-8"
+title="YouTube video player"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Artful Allure Blog. All rights reserved.</p>
+<p>
+Designed with
+<span style="color:#4fc3f7; font-size:1.2em;">&#10052;</span>
+by Airo Shelby Driz
+</p>
+</footer>
+
+</body>
+</html>

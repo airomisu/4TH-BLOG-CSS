@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artful Allure - About Me</title>
+<link rel="stylesheet" href="style.css">
+<style>
+h2 {
+text-align: center;
+margin-bottom: 50px;
+display: block;
+}
+
+.about-content { display: flex; align-items: center; gap: 60px; flex-wrap: wrap; }
+
+.profile-photo {
+width: 280px;
+height: 280px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #4fc3f7;
+padding: 10px;
+background: rgba(79, 195, 247, 0.1);
+box-shadow: 0 0 40px rgba(79, 195, 247, 0.2);
+transition: transform 0.5s ease;
+}
+
+.profile-photo:hover {
+transform: rotate(5deg) scale(1.05);
+}
+
+.bio {
+flex: 1;
+line-height: 2;
+font-size: 1.1em;
+color: #b0bec5;
+font-weight: 300;
+}
+
+.highlight {
+position: relative;
+z-index: 1;
+font-weight: 600;
+color: #e1f5fe;
+padding: 0 5px;
+}
+
+.highlight::before {
+content: '';
+position: absolute;
+bottom: 2px;
+left: 0;
+width: 100%;
+height: 8px;
+background: rgba(79, 195, 247, 0.3);
+z-index: -1;
+transform: skewX(-10deg);
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Aether & Art</h1>
+<p>Behind the Canvas</p>
+</header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="posts.html">Posts</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About Me</a>
+</nav>
+
+<div class="container">
+<h2>About the Artist</h2>
+
+<div class="about-content">
+<img src="https://i.pinimg.com/736x/99/56/43/99564342c089d409aa3c092eeec76324.jpg" alt="Artist Profile Photo" class="profile-photo">
+
+<div class="bio">
+<p>Hello! My name is <span class="highlight" style="color: #4fc3f7; text-shadow: 0 0 5px rgba(79, 195, 247, 0.5);"> Airo Shelby R. Driz</span> and I am a passionate art enthusiast.</p>
+
+<p>I have always been drawn to the creative world. My interests range from <span class="highlight">sketching</span> and <span class="highlight">coloring</span> to exploring other types of art mediums.</p>
+
+
+<p>I created this blog to document my journey, share my favorite techniques, and connect with other like-minded individuals. Whether you are a seasoned artist or just someone who appreciates the beauty of art, I hope you find something here that sparks your <span class="highlight" style="border-bottom: 2px solid #4fc3f7;">imagination</span>.</p>
+</div>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2026 Artful Allure Blog. All rights reserved.</p>
+<p>Designed with <span style="color: #4fc3f7;">&#10052;</span> by Airo Shelby R. Driz</p>
+</footer>
+
+</body>
+</html>

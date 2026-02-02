@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artful Allure - Gallery</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.container {
+max-width: 1000px;
+}
+
+h2 {
+text-align: center;
+margin-bottom: 50px;
+font-family: 'Cinzel', serif;
+color: #e1f5fe;
+font-size: 2.5em;
+letter-spacing: 5px;
+display: block;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+}
+
+.gallery-item {
+position: relative;
+overflow: hidden;
+border-radius: 2px;
+border: 1px solid rgba(129, 212, 250, 0.2);
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+transition: all 0.4s ease;
+background: rgba(0,0,0,0.2);
+}
+
+.gallery-item:hover {
+transform: translateY(-10px);
+border-color: #4fc3f7;
+box-shadow: 0 15px 40px rgba(79, 195, 247, 0.2);
+}
+
+.gallery-item img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+display: block;
+transition: transform 0.6s ease, filter 0.6s ease;
+filter: grayscale(30%) contrast(1.1);
+}
+
+.gallery-item:hover img {
+transform: scale(1.1);
+filter: grayscale(0%) contrast(1.2);
+}
+
+.caption {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: linear-gradient(to top, rgba(15, 32, 39, 0.95), rgba(15, 32, 39, 0.6));
+color: #e1f5fe;
+padding: 20px;
+text-align: center;
+transform: translateY(100%);
+transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+font-family: 'Cinzel', serif;
+letter-spacing: 1px;
+border-top: 1px solid rgba(79, 195, 247, 0.3);
+}
+
+.gallery-item:hover .caption {
+transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Artful Allure</h1>
+<p>Visual Echoes</p>
+</header>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="posts.html">Posts</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About Me</a>
+</nav>
+
+<div class="container">
+<h2 style="text-shadow: 0 0 15px rgba(79, 195, 247, 0.5);">The Collection</h2>
+
+<div class="gallery-grid">
+<div class="gallery-item">
+<img src="https://i.pinimg.com/736x/bb/66/b2/bb66b28bc9d3f09e361735dc48a65761.jpg" alt="da vinci">
+<div class="caption">Appreciating the Classics</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://i.pinimg.com/1200x/d1/da/9a/d1da9af2945dc42b2eb3c7a3ba041856.jpg" alt="Creative Woman">
+<div class="caption">The Moment of Inspiration</div>
+</div>
+
+<div class="gallery-item">
+<img src="https://i.pinimg.com/1200x/6d/3d/e6/6d3de6ec5a5b31ad87732a2442e45ffb.jpg" alt="stationary">
+<div class="caption">Tools of the Trade</div>
+</div>
+</div>
+</div>
+
+<footer>
+<p>&copy; 2026 Artful Allure. All rights reserved.</p>
+<p>Designed with <span style="color: #4fc3f7;">&#10052;</span> by Airo Shelby R. Driz</p>
+</footer>
+
+</body>
+</html>
